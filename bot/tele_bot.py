@@ -35,7 +35,7 @@ def echo(message, username):
 
 
 def start(message):
-    msg = "Hello! To make your own bot, please, open https://github.com/selectel/cloud-telegram-bot and follow " \
+    msg = "Hellllo! To make your own bot, please, open https://github.com/selectel/cloud-telegram-bot and follow " \
           "instructions 👍"
     _bot_send_message_with_retry(message.chat.id, msg, reply_to_message_id=message.message_id)
     bot.send_sticker(message.chat.id, "CAACAgIAAxkBAAIFDl7xtT4y70yc908hzCAI_ojAJR_-AAJ_BwACuSURSJsLZWr1VtxYGgQ",
