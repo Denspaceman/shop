@@ -93,8 +93,6 @@ def route_command(command, message):
         return start(message)
     elif command == '/sticker':
         return sticker(message)
-    elif command == '/test':
-        return send_test(message)
     else:
         match = re.search(r'/setwebhook\s(\d+:[a-zA-Z0-9-]+)\s(https?://(?:[-\w.]|(?:%[\da-fA-F]{2}))+/.*)', message.text)
         try:
