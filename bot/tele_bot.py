@@ -33,10 +33,6 @@ def echo(message, username):
         _bot_send_message_with_retry(message.chat.id, answer,
                                      reply_to_message_id=message.message_id)
 
-@bot.message_handler(commands=['test'])
-def send_test(message):
-	bot.reply_to(message, "Howdy, how are you doing?")
-
 def start(message):
     msg = "Hello! To make your own bot, please, open https://github.com/selectel/cloud-telegram-bot and follow " \
           "instructions 👍"
